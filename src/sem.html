@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminars Attended</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(90deg, #ff007f 50%, #00ffea 100%);
+            background-size: 200% 200%;
+            animation: backgroundAnimation 10s infinite;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .seminar {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px #ff007f, 0 0 30px #00ffea;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #00ffea;
+        }
+
+        .event {
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .event h2 {
+            color: #fff;
+            margin-bottom: 5px;
+            text-shadow: 0 0 5px #ff007f, 0 0 10px #00ffea;
+        }
+
+        .event-date {
+            font-weight: bold;
+            color: #00ffea;
+            text-shadow: 0 0 5px #00ffea, 0 0 10px #ff007f;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ff007f;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #ff007f, 0 0 30px #00ffea;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .home-link:hover {
+            background-color: #ff33a6;
+            box-shadow: 0 0 30px #00ffea, 0 0 40px #ff007f;
+        }
+    </style>
+</head>
+<body>
+    <div class="seminar">
+        <h1>Seminars Attended</h1>
+
+        <div class="event">
+            <h2>Digital Film Making Seminar</h2>
+            <p class="event-date">Date: March 16, 2023</p>
+        </div>
+
+        <div class="event">
+            <h2>TECH TALK Ignite{it}</h2>
+            <p class="event-date">Date: October 20, 2023</p>
+            <h2>Emerging in AI</h2>
+        </div>
+
+        <div class="event">
+            <h2>Digital Photography</h2>
+        </div>
+
+        <div class="event">
+            <h2>Thriving in IT</h2>
+        </div>
+
+        <div class="event">
+            <h2>Unleash Your Imagination: Game Development</h2>
+        </div>
+
+        <a href="index.html" class="home-link">Go to Home</a>
+    </div>
+</body>
+</html>

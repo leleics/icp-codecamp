@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Received Badges</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(90deg, #ff007f 50%, #00ffea 100%);
+            background-size: 200% 200%;
+            animation: backgroundAnimation 10s infinite;
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px; /* Limit the width of the badge container */
+        }
+
+        .badge {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background for contrast */
+            color: #00ffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px #00ffff, 0 0 30px #ff007f;
+            width: 150px;
+            margin: 0 10px; /* Margin for spacing between badges */
+            transition: transform 0.3s; /* Smooth scaling effect */
+        }
+
+        .badge:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .badge::before {
+            content: "\1F396"; /* Unicode trophy symbol */
+            font-size: 3em;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .badge h3 {
+            margin: 0;
+            font-size: 1.5em;
+            text-shadow: 0 0 5px #00ffff, 0 0 10px #ff007f; /* Neon glow */
+        }
+
+        .badge p {
+            margin: 10px 0 0;
+            font-size: 1em;
+        }
+
+        /* Home link button styles */
+        .home-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            padding: 15px;
+            background-color: #ff007f; /* Neon pink */
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #ff007f, 0 0 30px #00ffea; /* Glow effect */
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .home-link:hover {
+            background-color: #ff33a6; /* Lighter pink on hover */
+            box-shadow: 0 0 30px #00ffea, 0 0 40px #ff007f; /* Increased glow on hover */
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-link">Home</a>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>Academic Performance</p>
+            <h3>Object Oriented Programming</h3>
+        </div>
+        
+        <div class="badge">
+            <p>Academic Performance</p>
+            <h3>Networking I</h3>
+        </div>
+        
+        <div class="badge">
+            <p>Academic Performance</p>
+            <h3>Data Structures and Algorithms</h3>
+        </div>
+    </div>
+</body>
+</html>

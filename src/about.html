@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Alexis Accad Ico</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-image: url('https://your-background-image-url.jpg'); /* Update with your background image URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            position: relative; /* Make body a positioning context */
+        }
+        .logo-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('img/logo.jpg') no-repeat center center; /* Logo as background */
+            background-size: cover; /* Make the logo cover the entire screen */
+            opacity: 0.3; /* Adjust opacity for visibility */
+            z-index: 1; /* Place behind the container */
+        }
+        .container {
+            background: rgba(255, 0, 130, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(255, 0, 130, 0.5);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Place above the logo background */
+            animation: neon-glow 2s infinite alternate;
+        }
+        .formal-pic {
+            width: 120px; /* Adjust the size as needed */
+            height: 120px; /* Adjust the size as needed */
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 20px auto;
+            box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff007f, 0 0 30px #ff007f;
+        }
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+            text-shadow: 0 0 10px #fff;
+        }
+        .contact p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .contact strong {
+            color: #fff;
+        }
+        .button {
+            background-color: #ff007f; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none; /* No underline */
+            margin: 5px; /* Margin for spacing */
+            display: inline-block; /* Allow margin to take effect */
+        }
+        .button:hover {
+            background-color: #ff3399; /* Darker shade on hover */
+        }
+        @keyframes neon-glow {
+            from {
+                box-shadow: 0 0 20px #ff007f, 0 0 40px #ff007f;
+            }
+            to {
+                box-shadow: 0 0 40px #ff007f, 0 0 80px #ff007f;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-bg"></div> <!-- Logo background div -->
+    
+    <div class="container">
+        <h1>Alexis Accad Ico</h1>
+        <p>Project Manager</p>
+
+        <div class="formal-pic">
+            <img src="img/formal.jpg" alt="Formal Picture" style="width: 100%; height: 100%; object-fit: cover;"> <!-- Your formal picture -->
+        </div>
+
+        <p>
+            Hi, I'm Alexis Accad Ico, a 20-year-old from Brgy. Militar, Palayan City. 
+            Currently pursuing a Bachelor of Science in Information Technology, majoring in Business Analysis at Phinma - Araullo University. 
+            Passionate about project management, IT governance, and serving as the IT Governor and SK Secretary.
+        </p>
+
+        <div class="contact">
+            <p><strong>Mobile:</strong> 09484130189</p>
+            <p><strong>Address:</strong> Brgy. Militar, Palayan City, Nueva Ecija</p>
+        </div>
+
+        <a href="index.html" class="button">Home</a> <!-- Home button -->
+        <a href="gallery.html" class="button">Gallery</a> <!-- Gallery button -->
+    </div>
+
+</body>
+</html>

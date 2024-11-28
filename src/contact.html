@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.7) 50%), url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff007f;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px #ff007f, 0 0 30px #ff007f;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ff00ff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ff007f;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #ffb3d9;
+        }
+
+        button {
+            background-color: #ff007f;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-shadow: 0 0 20px #ff007f, 0 0 30px #ff007f;
+        }
+
+        button:hover {
+            background-color: #ff33a6;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #ffb3d9;
+        }
+
+        .home-button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+            background-color:  #ff007f;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+        }
+
+        .home-button:hover {
+            background-color: #ff33a6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Me</h1>
+
+    <form action="mailto:alac.ico.au@phinmaed.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>P7 Brgy. Militar, Palayan City, Nueva Ecija 3132</p>
+        <p>Contact: 0948 413 0189</p>
+    </footer>
+
+    <a href="index.html" class="home-button">Go to Home</a>
+
+</body>
+</html>
